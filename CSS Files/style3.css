@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header {
+  font-family: Algerian, sans-serif;
+  background-color: brown;
+  color: #ffff00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1 {
+  color: #ffff00;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.seating-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seat-row {
+  display: flex;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+}
+
+
+.seat {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 35px;
+  border-radius: 2px;
+  
+  background-color: green;
+  cursor: pointer;
+}
+
+.seat span {
+  font-size: 10px;
+}
+
+.seat.available {
+  background-color: #03C03C;
+}
+
+.seat.booked {
+  background-color: #007FFF;
+  cursor: not-allowed;
+}
+
+.seat.selected {
+  background-color: #FFD700;
+}
+
+.seat .seat-number {
+  color: #000;
+  font-size: 12px;
+}
+
+#selectedSeatsInfo {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#totalPrice {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#bookingSummary {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#totalSeatsBooked,
+#totalPriceToPay {
+  font-weight: bold;
+}
