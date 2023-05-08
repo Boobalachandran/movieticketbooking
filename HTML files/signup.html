@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>MY SHOW Signup</title>
+  <link rel="stylesheet" href="style4.css">
+<body>
+   
+  <header>
+    <h1>MY SHOW</h1>
+    <nav>
+      <ul>
+        <li><a href="signin.html">sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+<body>
+  <form action="signin.html">
+    <label for="regid">Registration ID:</label>
+    <input type="text" id="regid" name="regid" placeholder="Enter your registration ID" pattern="MS.{6}" title="Registration ID must start with MS followed by six characters" required><br>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" pattern="[a-zA-Z]+" pattern="[A-Za-z]+" title="Username must only contain letters" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least one digit, one lowercase letter, one uppercase letter, and be at least 8 characters long" required> <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="text" id="dob" name="dob" placeholder="DDMMYYYY" pattern="[0-9]{8}" required><br>
+  
+  <input type="submit" value="Submit">
+  <input type="reset" value="Cancel">
+  </form>
+
+</body>
+</html>
+

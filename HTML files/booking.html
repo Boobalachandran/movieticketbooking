@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Tickets with MY SHOW</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><h1>MY SHOW</h1></a>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">back</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  
+
+    <section>
+  <h2>Search Movies by Title</h2>
+  <div class="search-movies">
+    <input type="text" id="search-input" placeholder="Enter movie title">
+    <button id="search-btn">Search</button>
+  </div>
+  </section>
+
+    <section>
+      <h2>Select a Movie</h2>
+      <div class="movie-selection" data-selection="action">
+        <select id="movie-select" name="movie">
+          <option value="">Select a movie</option>
+          <option value="movie1">PS-II</option>
+          <option value="movie2">Rudhran</option>
+          <option value="movie3">Guardians of Galaxy</option>
+        </select>
+	    <button id="select-movie-btn">Select</button>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Filter by Genre</h2>
+      <div class="genre-filter">
+        <select id="genre-select" name="genre">
+          <option value="all">All Genres</option>
+          <option value="action">Action</option>
+          <option value="adventure">Adventure</option>
+          <option value="drama">Drama</option>
+          <!-- Add more genre options as needed -->
+        </select>
+        <button id="apply-filter-btn">Apply Filter</button>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Movie Options</h2>
+      <div class="movie-options">
+        <a href="ps2timings.html">
+          <div class="movie-option" data-genre="drama">
+            <input type="radio" id="movie1" name="movie" value="movie1">
+            <img src="C:\Users\Windows-10\Downloads\ps2.jpg" width="150" height="200" alt="PS-II">
+            <div class="movie-time"></div>
+          </div>
+        </a>
+        <a href="rudhrantimings.html">
+          <div class="movie-option" data-genre="action">
+            <input type="radio" id="movie2" name="movie" value="movie2">
+            <img src="C:\Users\Windows-10\Downloads\rudhran.jpg" width="150" height="200" alt="Rudhran">
+            <div class="movie-time"></div>
+          </div>
+        </a>
+        <a href="gogtimings.html">
+          <div class="movie-option" data-genre="adventure">
+            <input type="radio" id="movie3" name="movie" value="movie3">
+            <img src="C:\Users\Windows-10\Downloads\GOG.jpg" width="150" height="200" alt="Guardians of Galaxy">
+            <div class="movie-time"></div>
+          </div>
+        </a>
+        <!-- Add more movie options with their respective genres -->
+      </div>
+    </section>
+   
+  </main>
+  
+  <script src="booking.js"></script>
+</body>
+</html>
